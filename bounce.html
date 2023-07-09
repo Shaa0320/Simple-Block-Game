@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fall game</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 3px solid white;
+    margin: auto;
+    overflow: hidden;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+    z-index: 1000000;
+}
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+    </style>
+</head>
+<body>
+<div id="game">
+    <div id="character"></div>
+</div>
+<h1 style="font-family: cursive;color: white; margin-left: 850px;font-size: 100px;">@BLOCKY</h1>
+</body>
+<script src="bounce.js"></script>
+</html>

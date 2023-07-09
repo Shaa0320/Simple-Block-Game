@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(61, 61, 61);
+    }
+    header {
+      background-color: rgb(61, 61, 61);
+      padding: 10px;
+      color: black;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .user-options a {
+      color: whitesmoke;
+      font-family: cursive;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+        .banner img {
+    width: 1365px;
+    max-height: 330px;
+    }
+        footer {
+    background-color: rgb(61, 61, 61);;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;}
+    </style>
+</head>
+<script>function Game(){
+    let choice = document.getElementById("option").value;
+    if(choice=="bounce"){
+        window.location.href="./bounce.html";
+    }else if(choice=="jump"){
+        window.location.href="./jump.html";
+    }else if(choice=="run"){
+        window.location.href="./run.html";}
+    }
+    </script>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <p style="font-family: cursive;font-size: 50px;color: white;">@BLOCKY</p>
+            </div>
+        <div class="user-options">
+            <select name= ""id="option">
+            <option value="bounce">Bounce</option>
+            <option value="jump">Jump</option>
+            <option value="run">Run</option>
+        </select>
+        <button onclick="Game()">NEXT</button>
+        </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="blocky.jpg" alt="Banner Image">
+    </section>
+    <footer>
+        <p>&copy; 2023 Blocky. All rights reserved.</p>
+    </footer>
+</body>
+</html>
